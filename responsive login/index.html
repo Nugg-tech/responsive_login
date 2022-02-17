@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <script
+      src="https://kit.fontawesome.com/b6b9586b26.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <!-- Login form -->
+    <div id="sign_in">
+      <form>
+        <span>Sign In</span>
+        <div id="field">
+          <label><i class="fas fa-user"></i></label>
+          <input type="text" placeholder="Username" required />
+        </div>
+
+        <div id="field">
+          <label><i class="fas fa-lock"></i></label>
+          <input type="password" placeholder="Password" required />
+        </div>
+
+        <div id="field">
+          <input type="submit" value="Log in" />
+        </div>
+        <a href="#" class="forgot">Forgot password?</a>
+      </form>
+
+      <p>
+        <button onclick="signUp()"><a>don't have an account yet?</a></button>
+      </p>
+    </div>
+   
+    <!-- Registration -->
+
+    <div id="sign_up">
+      <form>
+        <span>Sign Up</span>
+        <div id="field">
+          <label><i class="fas fa-user"></i></label>
+          <input type="text" placeholder="Username" required />
+        </div>
+
+        <div id="field">
+          <label><i class="fas fa-at"></i></label>
+          <input type="email" placeholder="Email Address" required />
+        </div>
+
+        <div id="field">
+          <label><i class="fas fa-lock"></i></label>
+          <input type="password" placeholder="Password" required />
+        </div>
+
+        <div id="field">
+          <label><i class="fas fa-check-square"></i></label>
+          <input type="password" placeholder="Confirm Password" required />
+        </div>
+
+        <div id="field">
+          <input type="submit" value="Register" />
+        </div>
+      </form>
+
+      <p>
+        <button onclick="signIn()"><a>already have an account?</a></button>
+      </p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
